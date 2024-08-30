@@ -1,0 +1,881 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link rel="stylesheet" href="./index.css">
+  <style>
+    #rcorners1 {
+      background-color: darkred;
+      text-decoration-color: white;
+
+    }
+
+    .card.card-style {
+      margin: 10px;
+
+
+    }
+
+    .img-container {
+      float: left;
+      width: 33.33%;
+      padding: 5px;
+    }
+
+    .clearfix::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+
+    .download_app_sec {
+      background: #fff
+    }
+
+    .app_right_sec img {
+      width: 100%
+    }
+
+    .app_left_cont h2 {
+      font-size: 32px;
+      color: #000
+    }
+
+    .app_left_cont {
+      margin: 0 20px 0 0
+    }
+
+    .app_left_cont p {
+      font-size: 18px;
+      color: #757575
+    }
+
+    .get_app_form input {
+      border: none;
+      padding-left: 30px;
+      padding-right: 20px;
+    }
+
+    .get_app_form {
+      width: 100%;
+      height: 200%;
+      display: flex;
+      display: -webkit-flex;
+      border: 1px solid #e2e2e2;
+      background: #fff;
+      box-shadow: 0 2px 8px 0 rgb(0 0 0/8%);
+      -webkit-box-shadow: 0 2px 8px 0 rgb(0 0 0/8%);
+      position: relative;
+      margin-top: 35px
+    }
+
+    .get_app_form .country_code {
+      display: flex;
+      display: -webkit-flex;
+      width: 100px;
+      justify-content: center;
+      align-items: center;
+      margin: 15px 0;
+      border-right: 1px solid #e2e2e2;
+      position: absolute;
+      top: -15px;
+      height: 30px
+    }
+
+
+
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      appearance: none;
+      margin: 0
+    }
+
+    .mobile_error {
+      position: absolute;
+      color: red;
+      font-size: 14px;
+      margin-top: 8px
+    }
+
+    input[type=number] {
+      -webkit-appearance: textfield;
+      appearance: textfield
+    }
+
+    .get_app_form .send_btn {
+      position: absolute;
+      padding: 11px 0;
+      right: 0;
+      width: 50px;
+      height: 20px;
+      display: flex;
+      display: -webkit-flex;
+      cursor: pointer;
+      justify-content: center;
+      align-items: center;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      color: #fff;
+      background: #b93c5b;
+      margin: 4px 4px 4px 0;
+      text-transform: uppercase;
+      font-weight: 500
+    }
+
+    .download_app {
+      display: flex;
+      display: -webkit-flex;
+      flex-direction: row;
+      margin-top: 35px
+    }
+
+    .download_app a img {
+      width: 100%;
+      height: 100%
+    }
+
+    .download_app a {
+      width: 144px;
+      height: 48px
+    }
+
+    .download_app a.apple_play {
+      margin-left: 20px
+    }
+
+    .footer-content-wrapper {
+    width: 1050px;
+    margin: auto;
+    padding: 20px 0;
+}
+.showContent {
+    display: block;
+}
+.footer_new {
+    position: relative;  
+}
+
+
+
+.inner_container {
+    width: 1050px;
+    margin: 0 auto;
+    padding: 0;
+   
+   
+    
+}
+.footer_content {
+    position: absolute;
+    top: 0;
+    width: 1050px;
+    display: flex;
+    flex-direction: column;
+}
+.footer_inter_linking {
+    display: flex;
+    gap: 20px;
+    padding-top: 45px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid #707070;
+}
+.interlinking {
+    flex: 1 1;
+
+}
+.inter_linling_head {
+    font-size: 15px;
+    color: red;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+*,:after,:before{
+  box-sizing: border-box;
+    outline: 0;
+    outline-color: initial;
+    outline-style: initial;
+    outline-width: 0px;
+}
+
+.interlinking {
+   display: flex;
+    flex: 1 1;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;
+    justify-content: space-around;
+
+}
+.inter_linling_head {
+    font-size: 15px;
+    color: red;
+    margin-bottom: 15px;
+    font-weight: 500;
+    
+}
+ul{
+  list-style: none;
+    margin: 0;
+    padding: 0;
+    color: white;
+
+}
+.city_new_list {
+    margin-top: 30px;
+    padding-bottom: 40px;
+}
+.social_link_new a i {
+    background: #fff;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    unicode-bidi: isolate;
+}
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+    unicode-bidi: isolate;
+}
+.interlinkings{
+  display:flex;
+}
+  </style>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <img src="./Image/images.png" alt="" height="50px" width="50px">
+      <a class="navbar-brand" href="#">Home |</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blog | </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Register As A Professional | </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./Login.html">Login / Singup </a>
+          </li>
+
+        </ul>
+        </li>
+
+      </div>
+    </div>
+  </nav>
+  <div>
+    <div id="carouselExample" class="carousel slide" style="width: 100%; height: 10%;">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="Image/17833e138847963.6225a1b0f0fd7.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="Image/81LVW5ufkvL._AC_UF894,1000_QL80_.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="Image/young.png" class="d-block w-100" alt="...">
+        </div>
+
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+      <div style="text-align: center; border: 50%; height: 50%; width: 90%; border: 50%;">
+        <p id="rcorners1" style="text-align:center;">BengaluruVidhana Soudha Metro Station, Ambedkar Veedhi, Bengaluru,
+          Karnataka 560001, India
+          <img src="./Image/location_icon.webp" alt="" style="height: 30px;">
+
+          <input placeholder="Search for Services" type="text" value="">
+          <img src="./Image/search.webp" alt="" style="height: 20px;">
+        </p>
+      </div>
+    </div>
+  </div>
+
+  </div>
+
+  </div>
+  <div class="inner_container"><span class="heading">
+      <h1>India's Most <b>Affordable Home Salon</b></h1><img src="/static/images/Rectangle.webp" alt="" loading="lazy">
+    </span>
+  </div>
+  </div>
+  </div>
+  <div class="card-group">
+    <div class="card card-style">
+      <img src="Image/photo.webp" class="card-img-top" alt="..." style="height: 150px; border-radius: 50%;">
+      <div class="card-body">
+        <h5 class="card-title">Body massaga</h5>
+
+      </div>
+    </div>
+
+    <br> <br>
+    <div class="card card-style">
+      <img src="Image/home spa day.jpg" class="card-img-top" alt="..." style="height: 150px; border-radius: 50%;">
+      <div class="card-body">
+        <h5 class="card-title">Home spa</h5>
+
+      </div>
+    </div>
+    <div class="card card-style">
+      <img src="Image/portrait-woman-wearing-beauty-mask-995x617.jpg" class="card-img-top" alt="..."
+        style="height: 150px; border-radius: 50%;">
+      <div class="card-body">
+        <h5 class="card-title">Women facial</h5>
+
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+
+  <div>
+    <h1>Male Spa</h1>
+  </div>
+
+  <div class="card-group card-style">
+    <div class="card card-style">
+      <img src="Image/male spa/image-1024x682.jpeg" class="card-img-top" alt="..."
+        style="height: 150px; border-radius: 50%;">
+      <div class="card-body">
+        <h5 class="card-title">Hair cut</h5>
+
+      </div>
+    </div>
+    <div class="card card-style">
+      <img src="Image/male spa/image-asset.jpeg" class="card-img-top" alt="..."
+        style="height: 150px; border-radius: 50%;">
+      <div class="card-body">
+        <h5 class="card-title">Facial</h5>
+
+      </div>
+    </div>
+    <div class="card card-style">
+      <img src="Image/male spa/mens-hair-spa-treatment-1697606470-7135542.jpeg" class="card-img-top" alt="..."
+        style="height: 150px; border-radius: 50%;">
+      <div class="card-body">
+        <h5 class="card-title">Head wash</h5>
+
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  <div>
+    <span class="heading">
+      <h2>Why Choose <b>Yes Madam</b></h2><img src="/static/images/Rectangle.webp" alt="" loading="lazy">
+      <img src="Image/Rectangle.png" alt="" loading="lazy">
+    </span>
+  </div>
+
+
+
+  <div class="card-group card-style" style="height: 50%; width: 100%;">
+    <div class="card card-style" style="height: 50%;">
+      <img src="Image/why_1.webp" alt="Trained and Verified Experts" loading="lazy"
+        style="height: 180px; border-radius: 50%;">
+      <div class="card-body">
+        <h5 class="card-title">Trained and Verified Experts</h5>
+        <div>
+          <span class="why_para">We at Yes Madam believe in working
+            with the utmost professionalism. Thus, our clients are served only by well-experienced and skilled
+            professionals.</span>
+        </div>
+
+
+      </div>
+    </div>
+    <div class="card card-style" style="height: 20%;">
+      <img src="Image/why_2.webp" class="card-img-top" alt="..." style="height: 180px; border-radius: 40%;">
+      <div class="card-body">
+        <h5 class="card-title">Genuine and Sealed Products</h5>
+        <div>
+          <span class="why_para">All our professionals use only
+            top-notch products. In fact, we provide freedom to use your own products, where you can just call our
+            professionals for the services.</span>
+        </div>
+
+      </div>
+    </div>
+    <div class="card card-style" style="height: 30%;">
+      <img src="Image/why_3.webp" class="card-img-top" alt="..." style="height: 180px; border-radius: 50%;">
+      <div class="card-body">
+        <h5 class="card-title">Transparent and Affordable Prices</h5>
+        <div>
+          <span class="why_para">As we believe in 100%
+            transparent pricing module, all our at-home salon and wellness services are quite affordable and
+            budget-friendly. </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  <div>
+    <div>
+
+      <div class="inner_container"><img src="Image/banner.webp" alt="safe &amp; hygienic service at yesmadam"
+          class="banner_img" loading="lazy"></div>
+    </div>
+    <span>
+      <h2>Beauty</h2>
+      <img src="/Image/Rectangle2.webp" alt="">
+    </span>
+
+    <section class="download_app_sec" style="position: relative;">
+      <div class="inner_container">
+        <div class="app_sec">
+          <div class="app_left_sec">
+            <div class="app_left_cont">
+              <h2>Download via SMS</h2>
+              <p>Get a link via SMS to install the app. Fill your number down here.</p>
+              <div class="get_app_form"><span class="country_code">+91</span><input maxlength="10" type="number"
+                  value=""><button class="send_btn">Send</button></div>
+              <div class="download_app"><a href="#" class="google_play" target="_blank"><img
+                    src="Image/google_play.webp" alt="" loading="lazy"></a><a href="" class="apple_play"
+                  target="_blank"><img src="Image/app_store.webp" alt="" loading="lazy"></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+    </section>
+    <div>
+      <div class="footer-content-wrapper">
+        <div>
+          <h2>Your Heaven Of Beauty Curated Just For You With YesMadam Home Salon Services In Delhi</h2>
+          <div class="hideContent">
+            <p style="font-size: 15px; color: rgb(64, 64, 64);">Men and women both are an impossible juggernaut to
+              reckon with, breaking barriers, defying age-old myths and carving their path to success in all facets
+              while donning multiple hats of a father/mother, husband/wife, being the family's financial rock,
+              entrepreneur and life-long learners with panache.</p>
+            <div style="margin-top: 20px;">
+              <p style="font-size: 15px; color: rgb(64, 64, 64);">In the whirlwind of these crosses to bear, we humans
+                tend to overlook our self-needs and shower ourselves with some TLC. And if you live in a busy city like
+                Delhi, the impossible traffic, commotion, and distances make it even more arduous to indulge in
+                self-love and personal care.
+              </p>
+              <p style="font-size: 15px; color: rgb(64, 64, 64);">To overcome all the issues and take some time for
+                yourself, opting for YesMadam's home salon services in Delhi can help you a great deal. With quality
+                service, transparency of price, and monodose products used for the services rendered, you can get
+                yourself the pampering you deserve.
+
+              </p>
+              <p style="font-size: 15px; color: rgb(64, 64, 64);">With a team of professionals on board, we offer a
+                one-stop solution to meet all your salon service requirements in the comfort of your home in Delhi.
+
+
+              </p>
+              <h2>YesMadam: Bringing You Exclusive Personalised Home Salon Service In Posh Localities</h2>
+              <p style="font-size: 15px; color: rgb(64, 64, 64);">One chooses to settle down in a cosmopolitan city like
+                Delhi, with the perspective of experiencing world-class amenities and decides to live in posh localities
+                providing excellent educational facilities to their offspring and living in a comfortable home.
+              </p>
+              <p style="font-size: 15px; color: rgb(64, 64, 64);">But one must recognise the long commuting distances of
+                Delhi and the traffic jams synonymous with the place, weighing you down.
+
+              </p>
+              <p style="font-size: 15px; color: rgb(64, 64, 64);">At YesMadam, as seen on Shark Tank Season 3,
+                acknowledge and understand these everyday challenges and offer specialised home salon services in the
+                Delhi region, specially curated for your unique needs.
+
+
+              </p>
+              <div style="margin-top: 20px;">
+                <div>
+                  <div>
+                    <h2 style="font-size: 25px;">Treat Yourself To The Pampering You Truly Deserve With Our Female Salon
+                      Services At Home </h2>
+                    <p style="font-size: 15px; color: rgb(64, 64, 64);">Unleash your inner diva and give your skin and
+                      self the attention it deserves. We at YesMadam offer safe and relaxing home salon services in
+                      undefined. Our team of efficient service providers follows the strictest safety and beauty
+                      protocols and performs the beauty home salon service at home.</p>
+                    <p style="font-size: 15px; color: rgb(64, 64, 64);">Here are some beauty treatments you can treat
+                      yourself to:
+                    </p>
+                    <ul>
+                      <li style="list-style: disc; font-weight: bold;">Facial</li>
+                      <p style="color: rgb(64, 64, 64);">The magic of a good facial massage can melt away the stress and
+                        tension from your face, rejuvenating your skin and restoring your radiant glow. You can choose
+                        from our extensive range of facials, from the good old fruit facial to extra glow age-defying
+                        concoctions that hydrate, repair, and revitalise your skin for a youthful glow. Our trained
+                        professionals will help you make a pick based on your skin type and health.</p>
+                      <li style="list-style: disc; font-weight: bold;">Clean up</li>
+                      <p style="color: rgb(64, 64, 64);">Our clean-ups are curated to provide a quick and radiant glow.
+                        Our range of products gently exfoliates the skin, restores your complexion, reduces dark circles
+                        under the eyes, and evens out the skin tone of the face and neck area.</p>
+                      <li style="list-style: disc; font-weight: bold;">Face D-tan</li>
+                      <p style="color: rgb(64, 64, 64);">This service has a magical effect on your facial skin. It helps
+                        remove the tanning and impurities, covering your beautiful skin. It is carried out precisely by
+                        our professional service providers, who have a Midas touch.</p>
+                      <li style="list-style: disc; font-weight: bold;">Face Mask</li>
+                      <p style="color: rgb(64, 64, 64);">We have a range of face masks for all skin types, designed to
+                        tackle issues like pigmentation, blemishes, and freckles, leaving your skin hydrated and
+                        moisturised.</p>
+                      <li style="list-style: disc; font-weight: bold;"> Face bleach</li>
+                      <p style="color: rgb(64, 64, 64);">Our professionals will help you select a face bleach according
+                        to your skin type and health to ensure no irritation or reaction, unlocking your skin's natural
+                        glow.</p>
+                      <li style="list-style: disc; font-weight: bold;">Body Polish</li>
+                      <p style="color: rgb(64, 64, 64);">The brands and products used for this service gently exfoliate,
+                        refine, and polish your skin, deeply moisturising the deep layers of your skin and making it
+                        supple, velvety, and soft.</p>
+                      <li style="list-style: disc; font-weight: bold;"> Body Scrub</li>
+                      <p style="color: rgb(64, 64, 64);">This service helps remove dead cells, gently exfoliates your
+                        skin, increases blood circulation and cleanses it, making your skin feel fresh and smooth.</p>
+                      <li style="list-style: disc; font-weight: bold;"> Manicure</li>
+                      <p style="color: rgb(64, 64, 64);">Relax in your comfortable chair while our professional uses
+                        gentle ingredients to moisturise your hands. Later, add a little colour to your nails to make
+                        your fingertips look gorgeous.</p>
+                      <li style="list-style: disc; font-weight: bold;"> Pedicure</li>
+                      <p style="color: rgb(64, 64, 64);">Enjoy a relaxing massage that increases blood circulation and
+                        helps alleviate soreness or pain. All the clipping, filling, and deep cleaning of your feet and
+                        toenails will make your skin shine bright and velvety soft. Also, choose to paint your toenails
+                        with a colour that reflects your bold confidence.</p>
+                      <li style="list-style: disc; font-weight: bold;">Waxing</li>
+                      <p style="color: rgb(64, 64, 64);">Only high-quality products are used, and hygienic protocols are
+                        followed for waxing, especially for sensitive areas. This ensures no blemishes or side effects
+                        and smooths your skin. We offer half/full hands, underarms, half/full legs, bikini, full body,
+                        half/full back, and stomach waxing services. If you are looking for waxing hair removal services
+                        near me, go nowhere, book an appointment with us today!</p>
+                      <li style="list-style: disc; font-weight: bold;">Threading</li>
+                      <p style="color: rgb(64, 64, 64);">Our team of professional service providers executes this
+                        service with absolute flair; we offer eyebrows, face, upper lips, lower lips, chin, side lock
+                        and forehead threading services.</p>
+                    </ul>
+                  </div>
+                </div>
+                <div style="margin-top: 20px;">
+                  <div>
+                    <div>
+                      <h2 style="font-size: 25px;">Turn All Heads Around With Our Female Hair Services</h2>
+                      <p style="font-size: 15px; color: rgb(64, 64, 64);">You no longer need to go to a salon to have
+                        good hair days. Unleash your mane attraction with YesMadam, where we provide all hair services
+                        using the best products and equipment in the comfort of your home by our senior, well-trained
+                        service providers.
+                      </p>
+                      <p style="font-size: 15px; color: rgb(64, 64, 64);">Here are some hair treatments you can pamper
+                        your mane with:
+
+                      </p>
+                      <ul>
+                        <li style="list-style: disc; font-weight: bold;">Scalp scrub</li>
+                        <p style="color: rgb(64, 64, 64);">Reduce stress, increases blood circulation and promote hair
+                          growth with our specialised hair scalp scrub service, a relaxing experience.</p>
+                        <li style="list-style: disc; font-weight: bold;">Head wash</li>
+                        <p style="color: rgb(64, 64, 64);">After a relaxing scalp scrub or applying henna or hair
+                          colour, you can choose our head wash service to ensure your hair is clean and shining.</p>
+                        <li style="list-style: disc; font-weight: bold;">Heena application</li>
+                        <p style="color: rgb(64, 64, 64);">Our experienced service providers follow the set hygienic
+                          standards and protocols, ensuring no stains or spills while applying henna on your entire
+                          mane.</p>
+                        <li style="list-style: disc; font-weight: bold;">Hair touch-up</li>
+                        <p style="color: rgb(64, 64, 64);">Select the shade, and we will add it to your hair and life.
+                          Our well-defined application process will ensure you experience the best service and results.
+                        </p>
+                        <li style="list-style: disc; font-weight: bold;"> Hair fall control shots vitaliser </li>
+                        <p style="color: rgb(64, 64, 64);">Don't let your precious locks fall any more; we have
+                          specialised hair treatments for all hair types, which will help reclaim your crown and
+                          confidence.</p>
+                        <li style="list-style: disc; font-weight: bold;">Haircut</li>
+                        <p style="color: rgb(64, 64, 64);">Our team of trained professionals offers haircut services
+                          according to your liking and will be able to recommend a customised advanced haircut based on
+                          your hair texture and face shape.</p>
+                        <li style="list-style: disc; font-weight: bold;"> Hair blow dry</li>
+                        <p style="color: rgb(64, 64, 64);">Transform your hair from flat to fab, just in a flash, by our
+                          trained service providers.</p>
+                        <li style="list-style: disc; font-weight: bold;"> Hairstyling</li>
+                        <p style="color: rgb(64, 64, 64);">If you have an impromptu dinner invite and are still stuck at
+                          work, don't worry; we will have a professional at your doorstep to style your hair so you get
+                          noticed.</p>
+                      </ul>
+                    </div>
+                  </div>
+                  <h2 style="font-size: 25px;">Melt away the stress with Female SPA services</h2>
+                  <p style="font-size: 15px; color: rgb(64, 64, 64);">Escape from the hustle and bustle of life and
+                    enjoy specialised Spa services at home with YesMadam. Our professional Spa services are meticulously
+                    carried out by our highly trained and skilled service providers, leaving you with a rejuvenating
+                    experience that awakens your senses.</p>
+                  <ul>
+                    <li style="list-style: disc; font-weight: bold;">Full body massage</li>
+                    <p style="color: rgb(64, 64, 64);">De-stress your body and mind with a relaxing massage with
+                      natural, high-hydrating oils by our highly skilled professional service providers, who specialise
+                      in pressure point massage techniques and help alleviate pain and stress spasms. We offer warm,
+                      energising and electric massage services along with specialised foot, head, body, face, back and
+                      leg massage services.</p>
+                    <li style="list-style: disc; font-weight: bold;">Premium Spa therapies</li>
+                    <p style="color: rgb(64, 64, 64);">Enjoy advanced facials, customised body massages, and
+                      hydrotherapy treatments with our premium spa therapies. Products infused with essential oils,
+                      deeply hydrating and moisturising properties and rich in minerals and vitamins are used to
+                      detoxify your skin and for you to experience ultimate relaxation.</p>
+                    <li style="list-style: disc; font-weight: bold;">Potli massage</li>
+                    <p style="color: rgb(64, 64, 64);">Experience this traditional Ayurvedic treatment at home; the
+                      ingredients used for this massage deeply nourish your body, alleviate pains and aches, improve
+                      blood circulation and help you relax and melt away any tension or stress.</p>
+                  </ul>
+                  <h2 style="font-size: 25px;">Restore, rejuvenate and radiate your beauty with LED Face Treatments</h2>
+                  <p style="font-size: 15px; color: rgb(64, 64, 64);">For your skin to illuminate inside out, try
+                    YesMadam’s LED facial and clean-up services. It is carried out by our highly specialised
+                    professionals with the latest equipment, helps reduce fine lines, alleviates acne-related issues,
+                    and evens out your skin tone, giving you that natural beautiful glow</p>
+                  <h2 style="font-size: 25px;">Achieve Nail-file Goals With YesMadam’s Nail Services</h2>
+                  <p style="font-size: 15px; color: rgb(64, 64, 64);">If you want your nails to look so good that they
+                    steal the show, try YesMadam’s nail art services at home. We have an endless variety and range of
+                    nail art designs and shades that cater to your unique personality. From sparkling gel to elegant
+                    nudes, we have every shade and colour to elevate your mood. We provide Gel polish, Ext removal and
+                    Nail art services.</p>
+                  <h2 style="font-size: 25px;">Level up your grooming game with YesMadam male grooming services</h2>
+                  <p style="font-size: 15px; color: rgb(64, 64, 64);">Today's alpha males and superdads understand the
+                    value of self-care and some relaxing downtime. We at YesMadam have curated specialised male grooming
+                    services to upgrade our male customers' appearance and make them look good and confident. Here are
+                    some beauty treatments you can treat yourself to:</p>
+                  <ul>
+                    <li style="list-style: disc; font-weight: bold;">Facial:</li>
+                    <p style="color: rgb(64, 64, 64);">The magic of a good facial massage can melt away the stress and
+                      tension from your face, rejuvenating your skin and restoring your radiant glow. You can choose
+                      from our extensive range of facials, from the good old fruit facial to extra glow age-defying
+                      concoctions that hydrate, repair and revitalise your skin for a youthful glow. Our trained
+                      professionals will help you choose based on your skin type and skin health.</p>
+                    <li style="list-style: disc; font-weight: bold;">Face D-tan</li>
+                    <p style="color: rgb(64, 64, 64);">This service has a magical effect on your facial skin. It helps
+                      remove the tanning and impurities hiding your beautiful skin. It is carried out by our
+                      professional service providers, who have a Midas touch.</p>
+                    <li style="list-style: disc; font-weight: bold;"> Body Hair Trimming</li>
+                    <p style="color: rgb(64, 64, 64);">We understand our alpha man's grooming requirements and offer
+                      specialised body trimming services for you to enjoy the hygiene and comfort you truly deserve.</p>
+                    <li style="list-style: disc; font-weight: bold;"> Haircut</li>
+                    <p style="color: rgb(64, 64, 64);">Our team of trained professionals offers haircut services
+                      according to your liking and will be able to recommend a customised advanced haircut based on your
+                      hair texture and face shape.</p>
+                    <li style="list-style: disc; font-weight: bold;"> Hair touch-up</li>
+                    <p style="color: rgb(64, 64, 64);">Select your shade, and we will add it to your hair and life. Our
+                      well-defined application process will ensure you experience nothing but the best service and
+                      results.</p>
+                    <li style="list-style: disc; font-weight: bold;"> Keratin Hair Spa</li>
+                    <p style="color: rgb(64, 64, 64);">Reduce the frizz, nourish your hair and rediscover the world of
+                      shiny and smooth hair with our keratin hair spa services,</p>
+                    <li style="list-style: disc; font-weight: bold;"> Shave &amp; Beard Trimming</li>
+                    <p style="color: rgb(64, 64, 64);">From scruffy to fab in just a flash, our team of professionals
+                      has mastered beard trimming to perfection.</p>
+                    <li style="list-style: disc; font-weight: bold;"> Kids Hair Cut</li>
+                    <p style="color: rgb(64, 64, 64);">Our professional service providers have the gentle touch and care
+                      to cut your child's tresses, creating big smiles and leaving them with cuteness overload. </p>
+                  </ul>
+                  <h2 style="font-size: 25px;">Unleash The Beauty Within With YesMadam’s Personalised Female Makeup
+                    Services</h2>
+                  <p style="font-size: 15px; color: rgb(64, 64, 64);">Make-up is an art, which we have mastered. Our
+                    highly trained professional make-up service providers can create a look for every mood, every
+                    occasion, especially for you. We provide party make-up with specialised eye make-up complimenting
+                    your outfit with thick luscious mascara eyelashes. To complete your look, we provide hair styling
+                    and saree draping services.</p>
+                  <h2 style="font-size: 25px;">Melt away the stress with Male SPA services</h2>
+                  <p style="font-size: 15px; color: rgb(64, 64, 64);">With our male spa services, indulge in the epitome
+                    of relaxation and rejuvenation at the comfort of your home. Invest in YesMadam’s professionalised
+                    Male spa services and be ready to take on the world looking and feeling your best.</p>
+                  <ul>
+                    <li style="list-style: disc; font-weight: bold;">Full body massage</li>
+                    <p style="color: rgb(64, 64, 64);">De-stress your body and mind with a relaxing massage with
+                      natural, high-hydrating oils by our highly skilled professional service providers, who specialise
+                      in pressure point massage techniques and help alleviate pain and stress spasms. We offer warm,
+                      energising and electric massage services along with specialised foot, head, body, face, back and
+                      leg massage services.</p>
+                    <li style="list-style: disc; font-weight: bold;">Premium Spa therapies</li>
+                    <p style="color: rgb(64, 64, 64);">Enjoy advanced facials, customised body massages, and
+                      hydrotherapy treatments with our premium spa therapies. Products infused with essential oils,
+                      deeply hydrating and moisturising properties and rich in minerals and vitamins are used to
+                      detoxify your skin and for you to experience ultimate relaxation.</p>
+                    <li style="list-style: disc; font-weight: bold;">Potli massage</li>
+                    <p style="color: rgb(64, 64, 64);">Experience this traditional Ayurvedic treatment at home; the
+                      ingredients used for this massage deeply nourish your body, alleviate pains and aches, improve
+                      blood circulation and help you relax and melt away any tension or stress.</p>
+                  </ul>
+                  <h2 style="font-size: 25px;">Look Nothing But The Best On Your D-Day With YesMadam’s Pre-Bridal
+                    services </h2>
+                  <p style="font-size: 15px; color: rgb(64, 64, 64);">Every bride is beautiful, and we at YesMadam help
+                    our gorgeous brides to prepare for their big day and look their splendid self, inside out with our
+                    pre-bridal premium and luxury packages.</p>
+                  <p style="font-size: 15px; color: rgb(64, 64, 64);">We offer a bundle of skin, hair, make-up and body
+                    treatments specifically designed for each bride and carried out by our team of expert beauty
+                    professionals to prepare the bride-to-be to shine brighter than ever on her wedding day.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="showContent" style="font-size: 15px; color: rgb(64, 64, 64);">Men and women both are an impossible
+            juggernaut to reckon with, breaking barriers, defying age-old myths and carving their path to success in all
+            facets while donning multiple hats of a father/mother, husband/wife, being the family's financial rock,
+            entrepreneur and life-long learners with panache.</p><button style="cursor: pointer;">Read More</button>
+        </div>
+        <div></div>
+      </div>
+    </div>
+
+    <section class="footer_new" style=" position: relative;
+    background-image: url(Image/Footer_bg.webp);
+    background-repeat:no-repeat;
+    background-size:100% 100vh; ">
+     
+      <div class="inner_container">
+        <div class="footer_cotent">
+          <div class="footer_inter_linking">
+            <div class="interlinking">
+              <div class="inter_linling_head">More from Yes Madam
+                <ul >
+                  <li>
+                    About Us
+                  </li>
+                  <li>
+                    Privacy Policy
+                  </li>
+                  <li>
+                    Terms and conditions
+                  </li>
+                  <li>
+                    Contribute
+                  </li>
+                  <li>
+                    Shark Tank India
+                  </li>
+                </ul>
+
+              </div>
+              <div class="interlinking"  >
+                <div class="inter_linling_head" >
+                  Categories</div>
+                  <ul >
+                    <li>Salon At Home</li>
+                    <li>Male Grooming</li>
+                    <li>Pre Bridal</li>
+                    <li>Facial</li>
+                    <li>Advance Facial</li>
+                    <li>Hair Studio</li>
+                    <li>At Home Nails</li>
+                    <li>MakeUp At Home</li>
+                  </ul>
+              </div>
+              <div class="interlinking">
+                <div class="inter_linling_head">Contact & navbarSupportedContent
+                  <ul>
+                    <li>Contact Us</li>
+                    <li>support@yesmadam.com</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer_new_city">
+                <div class="city_new_list">
+                  <div class="inter_linling_head for_mobile" style="font-size: 15px; color: rgb(172, 46, 87); width: 100%; text-align: center; margin-bottom: 12px;">
+                    Currently available in</div>
+                    <span class="city_new" style="width: 1070px; word-break: break-word; margin: auto;">
+                      <a  class="footer_colour">Agra |</a>
+                      <a  class="footer_colour">Ahmedabad | </a>
+                      <a  class="footer_colour">Aligarh | </a>
+                      <a  class="footer_colour">Amitsar | </a>
+                      <a  class="footer_colour">Barilly | </a>
+                      <a  class="footer_colour">Bengaluru | </a>
+                      <a  class="footer_colour">Bhagalpur | </a>
+                      <a  class="footer_colour">Bhopal |</a>
+                      <a  class="footer_colour">Bhubaneswar | </a>
+                      <a  class="footer_colour">Chandigarh | </a>
+                      <a  class="footer_colour">Cuttack | </a>
+                      <a  class="footer_colour">Dehradum | </a>
+                      <a  class="footer_colour">Delhi | </a>
+                      <a  class="footer_colour">Faridabad | </a>
+                      <a  class="footer_colour">Ghaziabad | </a>
+                      <a  class="footer_colour">Gorakhpur | </a>
+                      <a  class="footer_colour">GreaterNoida | </a>
+                      <a  class="footer_colour">Gurugram | </a>
+                      <a  class="footer_colour">Gwalior | </a>
+
+                    </span>
+
+                </div>
+                <div class="footer_new_social for_desk">
+                  <ul>
+                    <li class="social_link_new" style="margin-left: 30px;">
+                      <a href="https://www.instagram.com/yesmadam_official/">
+                        <li>
+                          <img src="Image/insts_new.webp" alt="instagram" loading="lazy" style="min-width: 21px; min-height: 21px; max-height: 30px; max-width: 30px;" >
+                        </li>
+                      </a>
+                    </li>
+                    <li class="social_link_new">
+                      <a href="https://www.facebook.com/yesmadamofficial">
+                        <li>
+                          <img src="Image/facebook_new_icon.webp" alt="facebook" loading="lazy" style="min-width: 14px; min-height: 27px; max-height: 36px; max-width:30px ;">
+                        </li>
+                      </a>
+
+
+                    </li>
+                  </ul>
+
+                </div>
+
+              </div>
+
+            </div>
+              
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>
